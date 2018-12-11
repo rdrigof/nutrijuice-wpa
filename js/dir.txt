@@ -1,0 +1,21 @@
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: 905B-A95C
+
+ Directorio de C:\xampp\htdocs\nutrijuice\js
+
+11-12-2018  11:22    <DIR>          .
+11-12-2018  11:22    <DIR>          ..
+11-12-2018  10:44               246 app.js
+20-10-2016  03:33            27.459 bootsnav.js
+28-10-2018  22:18            36.746 bootstrap.min.js
+11-12-2018  11:21    <DIR>          contact
+11-12-2018  11:22                 0 dir.txt
+28-10-2018  22:17               764 isotope-active.js
+28-10-2018  22:17            34.484 isotope.js
+28-10-2018  15:48            97.342 jquery-1.12.1.min.js
+28-10-2018  22:16            50.286 jquery.fancybox.js
+28-10-2018  22:10             1.934 jquery.scrollUp.min.js
+08-12-2016  18:27             1.715 main.js
+11-12-2018  10:46               350 sw-utils.js
+              11 archivos        251.326 bytes
+               3 dirs  348.955.537.408 bytes libres

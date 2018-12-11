@@ -1,0 +1,73 @@
+.alert {
+    font-style: italic;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.alert-error {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
+
+.alert.error {
+    background: #fedcdc;
+    border: 1px solid #eebfbf;
+    color: #d25a5a;
+}
+
+.alert.success {
+    background: #d7f9d2;
+    border: 1px solid #ade4a7;
+    color: #4ba242;
+}
+
+
+/* .alert-success {
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+} */
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-success hr {
+    border-top-color: #c9e2b3;
+}
+
+.alert-success .alert-link {
+    color: #2b542c;
+}
+
+.alert.warning {
+    background: #feddc7;
+    border: 1px solid #ebbfb6;
+    color: #c46743;
+}
+
+.invisible {
+    display: none;
+    visibility: visible;
+}
+
+.left-align {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.modContactForm form label span {
+    color: #999999;
+}
+
+.modContactForm form .error {
+    background: #b1524c;
+}
+
+.modContactForm form label.error {
+    display: block;
+}

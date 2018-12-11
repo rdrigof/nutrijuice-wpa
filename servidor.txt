@@ -1,0 +1,172 @@
+DATOS NUEVA CUENTA WEB HOSTING
+FAVOR LEA COMPLETAMENTE ESTE E-MAIL, IMPRÍMALO PARA SUS REGISTROS
+
+Estimado (a) Francisco ,
+
+Gracias por preferirnos. Su cuenta de hosting ha sido configurada. 
+Este e-mail contiene toda la información necesaria para comenzar ha utilizar su Servicio.
+
+
+GENERAL
+
+
+SERVICIO CONTRATADO 
+Plan Hosting: Plan Hosting Avanzado 
+Dominio : nutrijuice.cl 
+Monto de Primer Pago: $24.000,00 
+Monto de Siguientes Pagos: $24.000,00 
+Fecha para el Siguiente Pago: 24/10/2020
+
+-------------------------------------------------------------
+
+DATOS PANEL DE CONTROL 
+Nombre de Usuario: nutrijui 
+Contraseña: zxwcGO3230
+
+IMPORTANTE
+¿Tienes inconvenientes para ingresar a cPanel?
+Puedes revisar el siguiente tutorial.
+
+
+DATOS SERVIDOR
+
+
+DATOS DEL SERVIDOR
+Servidor Asignado: Hosty14 
+IP del Servidor: 186.64.118.130
+
+Nombre de Servidor 1 (DNS Primario): ns1.dnshosty.net (186.64.112.75) 
+Nombre de Servidor 2 (DNS Secundario): ns2.dnshosty.net (45.79.214.155) 
+Nombre de Servidor 3 (DNS Tercero): ns3.dnshosty.net (144.217.14.211)
+
+-----------------------------------------------------------
+
+IMPORTANTE
+Si está utilizando un dominio ya existente en su Cuenta Hosting Nueva, necesita actualizar la Dirección Nombre de Servidor (DNS) con los datos entregados.
+
+1. Si su dominio es .cl debe hacerlo en www.nic.cl. Siga los pasos de este videotutorial.
+2. Si su dominio es .com, .net, .org, .info, etc; Debe hacerlo con su proveedor de dominio, si lo adquirió con nosotros puede hacerlo desde su área de Cliente.
+
+
+
+
+DATOS PANEL DE CONTROL
+
+
+PANEL CONTROL URL TEMPORAL 
+Temporal Control Panel: http://186.64.118.130/cpanel 
+
+-----------------------------------------------------------
+
+PANEL CONTROL FINAL 
+Este puede utilizarlo una vez que su dominio este funcionando 
+Control Panel: http://www.nutrijuice.cl/cpanel
+
+ 
+
+SUBIR SITIO WEB
+
+
+FTP TEMPORAL 
+FTP Hostname Temporal: 186.64.118.130 
+Sitio Web URL Temporal: http://186.64.118.130/~nutrijui/
+
+-----------------------------------------------------------
+
+FTP FINAL 
+Este puede utilizarlo una vez que su dominio este funcionando 
+FTP Hostname: nutrijuice.cl 
+URL Sitio Web: http://www.nutrijuice.cl
+
+ 
+
+CONFIGURACIÓN DE CORREOS
+
+
+IMPORTANTE 
+Recuerde crear sus cuentas de correos en su cPanel. Tenga en cuenta que su dominio debe estar funcionando para que pueda utilizar sus cuentas de correo. 
+
+--------------------------------------------------------
+
+ACCESO WEBMAIL
+Webmail: www.nutrijuice.cl/webmail 
+Webmail le permite ingresar a su correo electrónico a través de su sitio web.
+
+Para más información puedes revisar el siguiente tutorial.
+--------------------------------------------------------
+
+DATOS PARA CONFIGURACIÓN DE CLIENTES DE CORREOS EXTERNOS 
+POP3 Dirección Host: mail.nutrijuice.cl 
+Puerto: 26 o 25 (Utilizar Puerto 26 si su proveedor de internet esta bloqueando el puerto 25)
+SMTP Dirección Host : mail.nutrijuice.cl 
+Usuario: Dirección Email Completa Incluyendo @sudominio.com 
+Contraseña: Contraseña especificada por el panel de control
+
+---------------------------------------------------------
+
+AYUDA: 
+Aprenda a crear su cuentas de correo en cPanel y a configurar su cuenta de correo en cliente de correos externos en el siguiente link: https://docs.hosty.cl
+
+ 
+
+PRODUCTOS DESCARGABLES
+
+
+COMO ACCEDER A ESTOS
+Si usted compro algún producto adicional descargable debe seguir los siguientes pasos para acceder a estos:
+
+--------------------------------------------------------
+
+PASOS
+
+Paso 1: Entre a nuestro sitio, luego ingrese a su "Área Cliente" con su e-mail y contraseña
+
+Paso 2: Dentro de esta presione la viñeta "Servicios", SubMenú "Mis Servicios", encuentre el producto asociado al Productos Descargable, recuerde que este producto debe estar activo de lo contrario no podrá descargar el producto
+
+Paso 3: Luego presione en el botón "Ver Detalles", a continuación presione la viñeta "Descargas"
+
+Paso 4: Allí presione sobre el link "Descargar" y listo el producto se descargara automáticamente
+
+ 
+
+APRENDA A COMO MANEJAR SU CUENTA
+
+
+En Hosty hemos puesto a su disposición más de 100 Videotutoriales, para que aprenda a manejar su cuenta Web Hosting a la perfección:
+
+VER VIDEOS TUTORIALES
+
+----------------------------------------------------------
+
+
+PREGUNTAS FRECUENTES
+
+QUE SON LOS DNS:La principal tarea que cumplen los DNS son traducir tu nombre de dominio en una dirección IP.
+
+--------------------------
+
+¿QUE SIGNIFICA QUE SU DOMINIO ESTE FUNCIONANDO?:Significa que una vez configurados los DNS del Dominio, permite que tu web y tus correos electrónicos sean localizados desde cualquier lugar del mundo mediante tu nombre de dominio. *IMPORTANTE: Una vez que se configuran los DNS, tarda entre 24 a 48 horas para que estos se propaguen por la red, y este funcionando perfectamente
+
+------------------------------
+
+¿MODIFICO LOS DNS SI COMPRE MI DOMINIO JUNTO A MI PLAN?:No es necesario modificar los DNS de su dominio si usted compro estos dos Productos al mismo tiempo, ya que estos se configuran automáticamente en el sistema.
+
+ 
+
+ALGUNOS DE LOS VIDEOS QUE ENCONTRARÁ
+- Como Configurar mis DNS en Nic Chile 
+- Como Acceder a cPanel 
+- Como crear una Cuenta de Correo Electrónico 
+- Como crear una Base de Datos 
+ y Muchos más
+
+
+TELÉFONOS
+
+CHILE: +56 225 739 464
+PERÚ: +51 170 94 317
+
+-------------------------
+
+Atentamente,
+Team Hosty
