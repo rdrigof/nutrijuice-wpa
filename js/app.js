@@ -12,21 +12,11 @@ if ( navigator.serviceWorker ) {
     navigator.serviceWorker.register( swLocation );
 
     window.addEventListener('load', function() {
-    
+
         navigator.serviceWorker.register( swLocation ).then( function(reg){
-            var OneSignal = window.OneSignal || [];
-            OneSignal.push(function() {
-              OneSignal.init({
-                appId: "6b707b79-a6d4-412d-a962-a851d239dec6",
-                autoRegister: false,
-                notifyButton: {
-                  enable: true,
-                },
-              });
-            });
 
             swReg = reg;
-            //swReg.pushManager.getSubscription().then( verificaSuscripcion );
+            swReg.pushManager.getSubscription().then( verificaSuscripcion );
 
         });
 
