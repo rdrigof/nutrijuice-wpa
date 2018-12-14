@@ -73,7 +73,9 @@ const APP_SHELL = [
     'js/jquery.fancybox.js',
     'js/jquery.scrollUp.min.js',
     'js/main.js',
-    'js/sw-utils.js'
+    'js/sw-utils.js',
+    'js/libs/plugins/mdtoast.min.js',
+    'js/libs/plugins/mdtoast.min.css'
 ];
 
 const APP_SHELL_INMUTABLE = [
