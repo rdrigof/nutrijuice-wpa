@@ -1,13 +1,14 @@
 var btn_mdtoast = $('.mdt-action');
 
 var url = window.location.href;
-var swLocation = '/nutrijuice/sw.js';
+//var swLocation = '/nutrijuice/sw.js';
+var swLocation = '/sw.js';
 var swReg;
 
 if ( navigator.serviceWorker ) {
-   // if ( url.includes('localhost') ) {
-        //git swLocation = '/sw.js';
-    //}
+//    if ( url.includes('localhost') ) {
+//         git swLocation = '/sw.js';
+//     }
 
     navigator.serviceWorker.register( swLocation );
 
@@ -63,6 +64,21 @@ function cancelarSuscripcionPush() {
 
 }
 
+// Get Key
+function getPublicKey() {
+
+    // fetch('api/key')
+    //     .then( res => res.text())
+    //     .then( console.log );
+
+    return fetch('api/key')
+        .then( res => res.arrayBuffer())
+        // returnar arreglo, pero como un Uint8array
+        .then( key => new Uint8Array(key) );
+
+
+}
+
 //Registrar suscripcion PUSH
 function registrarNotificacionesPush() {
 
@@ -77,14 +93,14 @@ function registrarNotificacionesPush() {
         .then( res => res.toJSON() )
         .then( suscripcion => {
 
-            // console.log(suscripcion);
-            // fetch('api/subscribe', {
-            //     method: 'POST',
-            //     headers: { 'Content-Type': 'application/json' },
-            //     body: JSON.stringify( suscripcion )
-            // })
-            // .then( verificaSuscripcion )
-            // .catch( cancelarSuscripcionPush );
+            console.log(suscripcion);
+            fetch('api/subscribe', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify( suscripcion )
+            })
+            .then( verificaSuscripcion )
+            .catch( cancelarSuscripcionPush );
 
 
         });

@@ -179,3 +179,42 @@ self.addEventListener( 'fetch', e => {
     e.respondWith( respuesta );
 
 });
+
+// Escuchar PUSH
+self.addEventListener('push', e => {
+
+    // console.log(e);
+
+    const data = JSON.parse( e.data.text() );
+
+    // console.log(data);
+
+
+    const title = data.titulo;
+    const options = {
+        body: data.cuerpo,
+        icon: 'images/icons/icon-72x72.png',
+        // icon: `img/avatars/${ data.usuario }.jpg`,
+        badge: 'images/favicon.ico',
+        image: 'http://nutrijuice.cl/images/portfolio_bg.jpg',
+        vibrate: [125,75,125,275,200,275,125,75,125,275,200,600,200,600],
+        openUrl: '/',
+        data: {
+            // url: 'https://google.com',
+            url: '/',
+            id: data.usuario
+        },
+        actions: [
+            {
+                action: '',
+                title: '',
+                icon: ''
+            }
+        ]
+    };
+
+
+    e.waitUntil( self.registration.showNotification( title, options) );
+
+
+});
