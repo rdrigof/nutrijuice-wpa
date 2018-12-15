@@ -1,5 +1,9 @@
 // imports
+importScripts('https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.min.js')
+
+importScripts('js/sw-db.js');
 importScripts('js/sw-utils.js');
+
 
 
 const STATIC_CACHE    = 'static-v2';
@@ -112,8 +116,6 @@ const APP_SHELL_INMUTABLE = [
     'php/mail.php'
 ];
 
-
-
 self.addEventListener('install', e => {
 
 
@@ -155,30 +157,60 @@ self.addEventListener('activate', e => {
 
 
 
+
 self.addEventListener( 'fetch', e => {
 
+    let respuesta;
 
-    const respuesta = caches.match( e.request ).then( res => {
+    if ( e.request.url.includes('/api') ) {
 
-        if ( res ) {
-            return res;
-        } else {
+        // return respuesta????
+        respuesta = manejoApiMensajes( DYNAMIC_CACHE, e.request );
 
-            return fetch( e.request ).then( newRes => {
+    } else {
 
-                return actualizaCacheDinamico( DYNAMIC_CACHE, e.request, newRes );
+        respuesta = caches.match( e.request ).then( res => {
 
-            });
+            if ( res ) {
+                
+                actualizaCacheStatico( STATIC_CACHE, e.request, APP_SHELL_INMUTABLE );
+                return res;
+                
+            } else {
+    
+                return fetch( e.request ).then( newRes => {
+    
+                    return actualizaCacheDinamico( DYNAMIC_CACHE, e.request, newRes );
+    
+                });
+    
+            }
+    
+        });
 
-        }
-
-    });
-
-
+    }
 
     e.respondWith( respuesta );
 
 });
+
+
+// tareas asíncronas
+self.addEventListener('sync', e => {
+
+    console.log('SW: Sync');
+
+    if ( e.tag === 'nuevo-post' ) {
+
+        // postear a BD cuando hay conexión
+        const respuesta = postearMensajes();
+        
+        e.waitUntil( respuesta );
+    }
+
+});
+
+
 
 // Escuchar PUSH
 self.addEventListener('push', e => {
@@ -215,6 +247,47 @@ self.addEventListener('push', e => {
 
 
     e.waitUntil( self.registration.showNotification( title, options) );
+
+
+});
+
+// Cierra la notificacion
+self.addEventListener('notificationclose', e => {
+    console.log('Notificación cerrada', e);
+});
+
+
+self.addEventListener('notificationclick', e => {
+
+
+    const notificacion = e.notification;
+    const accion = e.action;
+
+
+    console.log({ notificacion, accion });
+    // console.log(notificacion);
+    // console.log(accion);
+    
+
+    const respuesta = clients.matchAll()
+    .then( clientes => {
+
+        let cliente = clientes.find( c => {
+            return c.visibilityState === 'visible';
+        });
+
+        if ( cliente !== undefined ) {
+            cliente.navigate( notificacion.data.url );
+            cliente.focus();
+        } else {
+            clients.openWindow( notificacion.data.url );
+        }
+
+        return notificacion.close();
+
+    });
+
+    e.waitUntil( respuesta );
 
 
 });
