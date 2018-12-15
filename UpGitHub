@@ -1,5 +1,6 @@
 git add . //Agregar todos los archivos existentes con cambios
 git commit -m "Segundo commit" //Sube los cambios a git hub
 git push //Sube los cambios a git hub
-git remote add origin https://github.com/rdrigof/nutrijuice.git
+git remote add origin https://github.com/rdrigof/nutrijuice-wpa.git
+
 git push -u origin master
