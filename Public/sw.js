@@ -5,7 +5,6 @@ importScripts('js/sw-db.js');
 importScripts('js/sw-utils.js');
 
 
-
 const STATIC_CACHE    = 'static-v2';
 const DYNAMIC_CACHE   = 'dynamic-v1';
 const INMUTABLE_CACHE = 'inmutable-v1';
@@ -227,7 +226,7 @@ self.addEventListener('push', e => {
         body: data.cuerpo,
         icon: 'images/icons/icon-72x72.png',
         // icon: `img/avatars/${ data.usuario }.jpg`,
-        badge: 'images/favicon.ico',
+        badge: 'images/icon-72x72.png',
         image: 'http://nutrijuice.cl/images/portfolio_bg.jpg',
         vibrate: [125,75,125,275,200,275,125,75,125,275,200,600,200,600],
         openUrl: '/',
